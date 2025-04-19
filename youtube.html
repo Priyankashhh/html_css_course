@@ -4,19 +4,123 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>YouTube.com Clone</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<style>
+			p {
+				font-family: Roboto, Arial;
+			}
+			.video-preview {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 8px;
+			}
+			p {
+				font-style: Arial;
+			}
 			.thumbnail {
-				width: 300px;
-				height: 300px;
-				object-fit: contain;
+				width: 308px;
+				height: 172px;
+				object-fit: cover;
+				display: block;
+				margin: 0px;
+				margin-left: 0px;
 			}
 			.search-bar {
+				margin-bottom: 8px;
+			}
+			.topic-video {
+				/* width: 300px;ś */
+			}
+			.author {
+				margin-bottom: 0px;
+				color: #606060;
+				font-size: 12px;
+			}
+			.view {
+				margin-top: 4px;
+				color: #606060;
+				font-size: 12px;
+			}
+			.pic {
+				height: 36px;
+				width: 36px;
+				border-radius: 30px;
+				margin-top: 16px;
+				display: inline-block;
+			}
+			.profile-pic {
+				/* margin-top: 16px; */
+				display: inline-block;
+				width: 48px;
+				vertical-align: top;
+			}
+			.txt-preview {
+				display: inline-block;
+				width: 252px;
+				vertical-align: top;
 			}
 		</style>
 	</head>
 	<body>
-		<img class="thumbnail" src="thumbnail-1_.webp" />
-		<input class="search-bar" type="text" placeholder="Search" />
+		<div class="video-preview">
+			<!-- <p style="text-align: center"> -->
+			<div>
+				<input class="search-bar" type="text" placeholder="Search" />
+				<!-- </p> -->
+				<img class="thumbnail" src="thumbnail-1_.webp" />
+			</div>
+			<div>
+				<div class="profile-pic">
+					<img class="pic" src="./thumbnails/profile_eg.jpeg" />
+				</div>
+				<div class="txt-preview">
+					<p class="topic-video">
+						<strong>
+							Tech and AI with Google CEO<br />
+							Sundar Pichai!</strong
+						>
+					</p>
+					<p class="author">Marques Brownlee</p>
+					<p class="view">3.4M views &bull; 6 months ago</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="video-preview">
+			<input class="search-bar" type="text" placeholder="Search" />
+			<img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+
+			<p class="topic-video">
+				<strong> Try Not To Laugh Challenge #9 </strong>
+			</p>
+			<p class="author">Markiplier</p>
+			<p class="view">19M views &bull; 4 years ago</p>
+		</div> -->
+		<div class="video-preview">
+			<!-- <p style="text-align: center"> -->
+			<div>
+				<input class="search-bar" type="text" placeholder="Search" />
+				<!-- </p> -->
+				<img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+			</div>
+			<div>
+				<div class="profile-pic">
+					<img class="pic" src="./thumbnails/profile_eg2.jpeg" />
+				</div>
+				<div class="txt-preview">
+					<p class="topic-video">
+						<strong> Try Not To Laugh Challenge #9</strong>
+					</p>
+					<p class="author">Markiplier</p>
+					<p class="view">19M views &bull; 4 years ago</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <!-- spelling glt thi class ki okay -->
