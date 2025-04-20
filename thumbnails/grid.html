@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>grid practice</title>
+	</head>
+	<body style="padding-bottom: 1000px">
+		<div style="display: grid; grid-template-columns: 100px 100px 200px">
+			<!-- ekk baar 100px likhe gi usska mtlb hua ki ekk 100px ka column bnaa do, agrr 2 baar fir 2 column and so on...mne 2 hi toh likha tha tune kya change kiya, nhi vha sirf ekk baar likha tha
+                ok -->
+			<div style="background-color: lightblue">100px</div>
+			<div style="background-color: lightpink">
+				div2
+				<p>100px</p>
+			</div>
+			<div style="background-color: beige">200px</div>
+			<div style="background-color: lightpink">
+				<p>100px</p>
+			</div>
+		</div>
+
+		<div
+			style="
+				margin-top: 20px;
+				display: grid;
+				grid-template-columns: 100px 100px;
+			"
+		>
+			<div style="background-color: lightblue">div1</div>
+			<div style="background-color: lightpink">
+				div2
+				<p>text</p>
+			</div>
+		</div>
+
+		<div
+			style="
+				margin-top: 20px;
+				display: grid;
+				grid-template-columns: 100px 1fr;
+			"
+		>
+			<div style="background-color: lightblue">100px</div>
+			<div style="background-color: lightpink">1fr</div>
+		</div>
+
+		<div
+			style="
+				margin-top: 20px;
+				display: grid;
+				grid-template-columns: 100px 1fr 2fr;
+			"
+		>
+			<div style="background-color: lightblue">100px</div>
+			<div style="background-color: lightpink">1fr</div>
+			<div style="background-color: lightblue">1fr</div>
+		</div>
+
+		<div
+			style="
+				margin-top: 20px;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				height: 200px;
+				column-gap: 20px;
+				row-gap: 40px;
+			"
+		>
+			<div style="background-color: lightblue">1fr</div>
+			<div style="background-color: lightpink">1fr</div>
+			<div style="background-color: lightblue">1fr</div>
+			<div style="background-color: lightpink">1fr</div>
+			<div style="background-color: lightblue">1fr</div>
+			<div style="background-color: lightpink">1fr</div>
+		</div>
+	</body>
+</html>
+<!-- oyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->

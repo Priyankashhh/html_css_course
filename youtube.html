@@ -13,26 +13,28 @@
 		<style>
 			p {
 				font-family: Roboto, Arial;
+				/* background-color: purple; */
 			}
 			.video-preview {
-				display: inline-block;
+				/* display: inline-block;
 				vertical-align: top;
-				margin-right: 8px;
+				margin-right: 8px; */
 			}
 			p {
 				font-style: Arial;
 			}
 			.thumbnail {
-				width: 308px;
-				height: 172px;
+				width: 100%;
+				/* height: 172px;
 				object-fit: cover;
 				display: block;
 				margin: 0px;
-				margin-left: 0px;
+				margin-left: 0px; */
 			}
 			.search-bar {
 				margin-bottom: 8px;
 			}
+
 			.topic-video {
 				/* width: 300px;ś */
 			}
@@ -45,6 +47,10 @@
 				margin-top: 4px;
 				color: #606060;
 				font-size: 12px;
+			}
+			.video-info-grid {
+				display: grid;
+				grid-template-columns: 50px 1fr;
 			}
 			.pic {
 				height: 36px;
@@ -64,34 +70,45 @@
 				width: 252px;
 				vertical-align: top;
 			}
+			.video-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				column-gap: 16px;
+				row-gap: 40px;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="video-preview">
-			<!-- <p style="text-align: center"> -->
-			<div>
-				<input class="search-bar" type="text" placeholder="Search" />
-				<!-- </p> -->
-				<img class="thumbnail" src="thumbnail-1_.webp" />
-			</div>
-			<div>
-				<div class="profile-pic">
-					<img class="pic" src="./thumbnails/profile_eg.jpeg" />
+		<div class="video-grid">
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnail-1_.webp" />
 				</div>
-				<div class="txt-preview">
-					<p class="topic-video">
-						<strong>
-							Tech and AI with Google CEO<br />
-							Sundar Pichai!</strong
-						>
-					</p>
-					<p class="author">Marques Brownlee</p>
-					<p class="view">3.4M views &bull; 6 months ago</p>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong>
+								Tech and AI with Google CEO<br />
+								Sundar Pichai!</strong
+							>
+						</p>
+						<p class="author">Marques Brownlee</p>
+						<p class="view">3.4M views &bull; 6 months ago</p>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- <div class="video-preview">
+			<!-- <div class="video-preview">
 			<input class="search-bar" type="text" placeholder="Search" />
 			<img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
 
@@ -101,23 +118,141 @@
 			<p class="author">Markiplier</p>
 			<p class="view">19M views &bull; 4 years ago</p>
 		</div> -->
-		<div class="video-preview">
-			<!-- <p style="text-align: center"> -->
-			<div>
-				<input class="search-bar" type="text" placeholder="Search" />
-				<!-- </p> -->
-				<img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
-			</div>
-			<div>
-				<div class="profile-pic">
-					<img class="pic" src="./thumbnails/profile_eg2.jpeg" />
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
 				</div>
-				<div class="txt-preview">
-					<p class="topic-video">
-						<strong> Try Not To Laugh Challenge #9</strong>
-					</p>
-					<p class="author">Markiplier</p>
-					<p class="view">19M views &bull; 4 years ago</p>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg2.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong> Try Not To Laugh Challenge #9</strong>
+						</p>
+						<p class="author">Markiplier</p>
+						<p class="view">19M views &bull; 4 years ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+				</div>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg3.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong>
+								Crazy Tik Toks Taken Moments Before
+								DISASTER</strong
+							>
+						</p>
+						<p class="author">SSSniperWolf</p>
+						<p class="view">12M views &bull; 1 year ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+				</div>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg4.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong>
+								The Simplest Math Problem No One Can Solve -
+								Collatz Conjecture</strong
+							>
+						</p>
+						<p class="author">Veritasium</p>
+						<p class="view">19M views • 4 years ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+				</div>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg5.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong>
+								Kadane's Algorithm to Maximum Sum Subarray
+								Problem</strong
+							>
+							>
+						</p>
+						<p class="author">CS Dojo</p>
+						<p class="view">519K views · 5 years ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="video-preview">
+				<!-- <p style="text-align: center"> -->
+				<div>
+					<input
+						class="search-bar"
+						type="text"
+						placeholder="Search"
+					/>
+					<!-- </p> -->
+					<img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+				</div>
+				<div class="video-info-grid">
+					<div class="profile-pic">
+						<img class="pic" src="./thumbnails/profile_eg6.jpeg" />
+					</div>
+					<div class="txt-preview">
+						<p class="topic-video">
+							<strong>
+								Anything You Can Fit In The Circle I’ll Pay
+								For</strong
+							>
+						</p>
+						<p class="author">MrBeast</p>
+						<p class="view">141M views · 1 year ago</p>
+					</div>
 				</div>
 			</div>
 		</div>
