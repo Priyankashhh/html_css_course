@@ -29,6 +29,8 @@
 
 .topic-video {
 	/* width: 300px;ś */
+	padding-top: 0px;
+	margin-top: 8px;
 }
 .author {
 	margin-bottom: 0px;
@@ -43,12 +45,13 @@
 .video-info-grid {
 	display: grid;
 	grid-template-columns: 50px 1fr;
+	margin: 0px;
 }
 .pic {
 	height: 36px;
 	width: 36px;
 	border-radius: 30px;
-	margin-top: 16px;
+	margin-top: 8px;
 	display: inline-block;
 }
 .profile-pic {
@@ -61,10 +64,28 @@
 	display: inline-block;
 	width: 252px;
 	vertical-align: top;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 .video-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 16px;
 	row-gap: 40px;
+}
+@media (max-width: 750px) {
+	.video-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px) {
+	.video-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+@media (min-width: 751px) and (max-width: 999px) {
+	.video-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
